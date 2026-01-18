@@ -38,7 +38,7 @@ const Projects = () => {
     if (!window.confirm("Are you sure you want to delete this project?")) return;
 
     try {
-      await fetch(`http://localhost:5000/api/projects/${projectId}`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/projects/${projectId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

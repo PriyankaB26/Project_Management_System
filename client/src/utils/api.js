@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = `${import.meta.env.VITE_API_URL}/api`;
 
 export const refreshAccessToken = async () => {
   const refreshToken = localStorage.getItem("refreshToken");
