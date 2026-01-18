@@ -15,7 +15,16 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://projectmanagementsystem1.vercel.app',
+    'https://projectmanagemen-git-1af747-priyankabarman262005-2479s-projects.vercel.app',
+    'https://projectmanagementsystem1-kwmmamaea.vercel.app',
+    'http://localhost:3000', // for local development
+    'http://localhost:5173'  // for Vite dev server
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/dashboard", dashboardRoutes);

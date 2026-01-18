@@ -2,6 +2,9 @@ import axios from "axios";
 
 const apiUrl = `${import.meta.env.VITE_API_URL}/api`;
 
+// Configure axios defaults
+axios.defaults.withCredentials = true;
+
 export const refreshAccessToken = async () => {
   const refreshToken = localStorage.getItem("refreshToken");
   if (!refreshToken) {
@@ -9,7 +12,7 @@ export const refreshAccessToken = async () => {
   }
 
   try {
-    const response = await axios.post(`${apiUrl}/api/auth/refresh-token`, {
+    const response = await axios.post(`${apiUrl}/auth/refresh-token`, {
       refreshToken,
     });
 
