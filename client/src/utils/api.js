@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = `${import.meta.env.VITE_API_URL}/api`;
+const apiUrl = import.meta.env.VITE_API_URL;
 
 // Configure axios defaults
 axios.defaults.withCredentials = true;
