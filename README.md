@@ -1,148 +1,131 @@
-🚀 Project Management System (MERN Stack)
+# 🚀 Project Management System (MERN Stack)
 
-A full-stack Project Management System built using the MERN stack, designed to manage projects, tasks, users, and team collaboration with role-based access, activity tracking, and a real-time dashboard.
+A full-stack **Project Management System** built using the **MERN stack**, designed to manage projects, tasks, users, and team collaboration with **role-based access**, **activity tracking**, and a **real-time dashboard**.
 
-🔗 Live Demo (Vercel)
-👉 [https://projectmanagement1.vercel.app/dashboard](https://projectmanagement1.vercel.app/dashboard)
+---
 
-🎥 Demo Video
-👉 (Add your video link here – YouTube / Drive / Loom)
+## 🔗 Live Demo (Vercel)
 
-📌 Overview
+👉 **https://projectmanagement1.vercel.app/dashboard**
 
-This Project Management System enables organizations to plan, track, and manage projects efficiently.
-It supports multiple user roles, task workflows, activity logs, and a visual dashboard for quick insights.
+---
 
-🧠 Key Features
+## 🎥 Demo Video
 
-📊 Dashboard
+https://github.com/user-attachments/assets/b53bc13e-68ba-4ed8-b100-065be7dd0385
 
-Total Projects overview
+---
 
-Active / Pending / Completed projects
+## 📌 Overview
 
-Team members list
+This **Project Management System** enables organizations and teams to **plan, track, and manage projects efficiently**.
 
-Project status visualization (charts)
+It supports:
+- Multiple user roles  
+- Task workflows  
+- Activity logs  
+- Visual dashboard for quick insights  
 
-🗂 Project Management
+---
 
-Create, update, delete projects
+## 🧠 Key Features
 
-Project status tracking
+### 📊 Dashboard
+- Total projects overview  
+- Active / Pending / Completed project counts  
+- Team members list  
+- Project status visualization 
 
-Automatic task count & completion tracking
+### 🗂 Project Management
+- Create, update, and delete projects  
+- Project status tracking  
+- Automatic task count & completion tracking  
+- Project-based task grouping
 
-Project-based task grouping
+### ✅ Task Management
+- Create tasks under projects  
+- Assign tasks to team members  
+- Task priority & due dates  
+- Status updates (Pending / In Progress / Completed)  
+- Role-based task visibility
 
-✅ Task Management
-
-Create tasks under projects
-
-Assign tasks to team members
-
-Task priority & due dates
-
-Status updates (Pending / In Progress / Completed)
-
-Role-based task visibility
-
-👥 User & Role Management
-
+### 👥 User & Role Management
 Supported roles:
+- **Admin**
+- **Project Manager**
+- **Team Member**
 
-Admin
+Each role has different permissions and access levels.
 
-Project Manager
+---
 
-Team Member
+## 🔐 Authentication & Authorization
+- JWT-based authentication  
+- Secure protected routes  
+- Role-based access control  
+- Persistent login using `localStorage`
 
-Each role has different permissions.
+---
 
-🔐 Authentication & Authorization
+## 📝 Activity Logs
+Tracks important actions such as:
+- Project creation  
+- Task creation  
+- Task status updates  
+- Task deletion  
 
-JWT-based authentication
+Helps in **monitoring team activity** and **auditing changes**.
 
-Secure protected routes
+---
 
-Role-based access control
+## 🧑‍💼 Role-Based Access Control
 
-Persistent login using localStorage
+### 🔑 Admin
+- Full system access  
+- Create & delete projects  
+- Manage all users  
+- View all tasks & activities  
 
-📝 Activity Logs
+### 📋 Project Manager
+- Create & manage projects  
+- Assign tasks  
+- Update task status  
+- View all project-related data  
 
-Logs important actions:
+### 👨‍💻 Team Member
+- View assigned projects  
+- View & update assigned tasks  
+- Cannot delete projects or tasks  
 
-Project creation
+---
 
-Task creation
+## 🏗 Tech Stack
 
-Task status updates
+### Frontend
+- React.js  
+- React Router  
+- Context API  
+- Recharts (Charts)
 
-Task deletion
+### Backend
+- Node.js  
+- Express.js  
+- MongoDB  
+- Mongoose  
+- JWT Authentication  
 
-Helps in tracking team activity and auditing changes
+### Deployment
+- **Frontend:** Vercel  
+- **Backend:** Node.js server  
+- **Database:** MongoDB Atlas  
 
-🧑‍💼 Role-Based Access Control
-🔑 Admin
+---
 
-Full system access
+## 👩‍💻 Author
 
-Create & delete projects
+**Priyanka Barman**  
+Computer Science & Engineering (Data Science)  
 
-Manage all users
+---
 
-View all tasks & activities
-
-📋 Project Manager
-
-Create & manage projects
-
-Assign tasks
-
-Update task status
-
-View all project-related data
-
-👨‍💻 Team Member
-
-View assigned projects
-
-View & update assigned tasks
-
-Cannot delete projects or tasks
-
-🏗 Tech Stack
-Frontend
-
-React.js
-
-React Router
-
-Context API
-
-Recharts (Charts)
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-Mongoose
-
-JWT Authentication
-
-Deployment
-
-Frontend: Vercel
-
-Backend: Node.js server
-
-👩‍💻 Author
-
-Priyanka Barman
-Database: MongoDB Atlas
-
+⭐ If you like this project, feel free to **star the repository**!
