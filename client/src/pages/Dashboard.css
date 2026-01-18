@@ -1,0 +1,163 @@
+.dashboard-container {
+  padding: 30px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.dashboard-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-title {
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.active { background: #2ecc71; }
+.pending { background: #f1c40f; }
+.completed { background: #3498db; }
+.total { background: #9b59b6; }
+
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.users-section {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.role {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.action-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-projects-btn {
+  padding: 15px 30px;
+  background: #00b894;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.chart-section {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* ACTIVITY LOG STRIP */
+.activity-log-section {
+  margin-top: 30px;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}
+
+.activity-log-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.activity-log-list {
+  max-height: 250px; /* scrollable height */
+  overflow-y: auto;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.activity-row:last-child {
+  border-bottom: none;
+}
+
+.activity-user {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.activity-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.activity-role {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.activity-action {
+  flex: 1;
+  margin: 0 10px;
+  color: #555;
+}
+
+.activity-time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.no-activity {
+  text-align: center;
+  color: #888;
+  padding: 20px 0;
+}
