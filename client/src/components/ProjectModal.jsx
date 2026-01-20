@@ -41,10 +41,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     setLoading(true);
     try {
       if (project) {
-        await putData(`/api/projects/${project._id}`, formFields);
+        await putData(`/projects/${project._id}`, formFields);
         openAlertBox("success", "Project updated!");
       } else {
-        await postData("/api/projects", formFields);
+        await postData("/projects", formFields);
         openAlertBox("success", "Project created!");
       }
       fetchProjects();

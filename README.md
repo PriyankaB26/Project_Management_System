@@ -28,7 +28,7 @@ It supports:
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 ### 📊 Dashboard
 - Total projects overview  
@@ -49,7 +49,7 @@ It supports:
 - Status updates (Pending / In Progress / Completed)  
 - Role-based task visibility
 
-### 👥 User & Role Management
+### User & Role Management
 Supported roles:
 - **Admin**
 - **Project Manager**
@@ -78,7 +78,7 @@ Helps in **monitoring team activity** and **auditing changes**.
 
 ---
 
-## 🧑‍💼 Role-Based Access Control
+##  Role-Based Access Control
 
 ### 🔑 Admin
 - Full system access  
@@ -99,7 +99,7 @@ Helps in **monitoring team activity** and **auditing changes**.
 
 ---
 
-## 🏗 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React.js  

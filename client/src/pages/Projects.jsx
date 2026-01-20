@@ -17,7 +17,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
-    fetchProjects(); // fetch from backend on mount
+    fetchProjects(); 
   }, []);
 
   const handleAddProject = () => {

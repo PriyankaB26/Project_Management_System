@@ -53,7 +53,8 @@ const Login = () => {
     }
 
     try {
-      const res = await postData("/api/auth/login", formFields);
+      const res = await postData("/auth/login", formFields);
+
 
       if (res?.success) {
         context.openAlertBox("success", res.message);
