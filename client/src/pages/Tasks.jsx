@@ -43,7 +43,7 @@ const Tasks = () => {
     if (!window.confirm("Delete this task?")) return;
 
     try {
-      await deleteData(`/api/tasks/${taskId}`);
+      await deleteData(`/tasks/${taskId}`);
       openAlertBox("success", "Task deleted");
       await fetchTasks(projectId); 
     } catch (error) {
@@ -54,7 +54,7 @@ const Tasks = () => {
 
   const handleUpdateStatus = async (task, newStatus) => {
     try {
-      await putData(`/api/tasks/${task._id}`, { ...task, status: newStatus });
+      await putData(`/tasks/${task._id}`, { ...task, status: newStatus });
       openAlertBox("success", "Task status updated");
       await fetchTasks(projectId);
     } catch (error) {
