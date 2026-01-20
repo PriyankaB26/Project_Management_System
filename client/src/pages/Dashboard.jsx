@@ -37,7 +37,7 @@ const Dashboard = () => {
       if (!isLogin) return;
 
       try {
-        const res = await fetchDataFromApi("/api/activities"); 
+        const res = await fetchDataFromApi("/activities"); 
         if (res.success) setActivities(res.data || []);
       } catch (err) {
         console.error("Activity fetch error:", err);
