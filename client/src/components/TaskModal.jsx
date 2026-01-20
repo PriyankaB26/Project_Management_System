@@ -20,7 +20,7 @@ const TaskModal = ({ isOpen, onClose, task, projectId }) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetchDataFromApi("/api/users");
+        const res = await fetchDataFromApi("/users");
 
         if (res.success) setUsers(res.data);
       } catch (error) {
@@ -68,10 +68,10 @@ const TaskModal = ({ isOpen, onClose, task, projectId }) => {
 
 
       if (task) {
-        await putData(`/api/tasks/${task._id}`, payload);
+        await putData(`/tasks/${task._id}`, payload);
         openAlertBox("success", "Task updated!");
       } else {
-        await postData("/api/tasks", payload);
+        await postData("/tasks", payload);
         openAlertBox("success", "Task created!");
       }
 
