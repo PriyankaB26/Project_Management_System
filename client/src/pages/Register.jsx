@@ -37,7 +37,7 @@ const Register = () => {
     }
 
     try {
-      const res = await postData("/api/auth/register", formFields);
+      const res = await postData("/auth/register", formFields);
       if (res.success) {
         context.openAlertBox("success", res.message);
         setTimeout(() => {
