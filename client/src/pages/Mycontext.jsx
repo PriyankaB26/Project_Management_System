@@ -32,7 +32,7 @@ export const MyContextProvider = ({ children }) => {
 
   const fetchUserDetails = async () => {
     try {
-      const res = await fetchDataFromApi("/api/auth/user-details");
+      const res = await fetchDataFromApi("/auth/user-details");
       if (res?.success) {
         setUser(res.user || res.data.user);
         setRole(res.user?.role || res.data.user?.role);
@@ -46,7 +46,7 @@ export const MyContextProvider = ({ children }) => {
   const fetchProjects = async () => {
     try {
       setProjectsLoading(true);
-      const res = await fetchDataFromApi("/api/projects");
+      const res = await fetchDataFromApi("/projects");
       setProjects(res?.projects || res?.data?.projects || []);
     } catch (err) {
       setProjects([]);
@@ -58,7 +58,7 @@ export const MyContextProvider = ({ children }) => {
   const fetchTasks = async (projectId) => {
     if (!projectId) return;
     try {
-      const res = await fetchDataFromApi(`/api/tasks/${projectId}`);
+      const res = await fetchDataFromApi(`/tasks/${projectId}`);
       if (res.success) {
         setTasks(res.tasks);
       }
