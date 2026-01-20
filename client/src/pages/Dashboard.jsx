@@ -17,7 +17,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const res = await fetchDataFromApi("/api/dashboard");
+        const res = await fetchDataFromApi("/dashboard");
         setProjects(res?.projects || []);
         setUsers(res?.users || []);
         setTasks(res?.tasks || []);
