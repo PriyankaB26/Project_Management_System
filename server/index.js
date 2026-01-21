@@ -14,17 +14,16 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
 app.use(cors({
   origin: [
-    'https://projectmanagementsystem1.vercel.app',
-    'https://projectmanagemen-git-1af747-priyankabarman262005-2479s-projects.vercel.app',
-    'https://project-management-system-l1at.onrender.com', // add the URL from the error
-    'http://localhost:3000', // for local development
-    'http://localhost:5173'  // for Vite dev server
+    'https://projectmanagemnetsystem.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:5173'
   ],
   credentials: true
 }));
+
+
 app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/dashboard", dashboardRoutes);
