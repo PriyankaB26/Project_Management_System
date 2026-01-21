@@ -6,7 +6,7 @@ A full-stack **Project Management System** built using the **MERN stack**, desig
 
 ## 🔗 Live 
 
-👉 **https://projectmanagementsystem1.vercel.app**
+👉 **[https://projectmanagementsystem1.vercel.app](https://projectmanagemnetsystem.vercel.app)**
 
 ---
 
